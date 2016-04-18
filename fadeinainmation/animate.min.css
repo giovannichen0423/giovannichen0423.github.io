@@ -1,0 +1,57 @@
+/* 定義Jumptron樣式 */
+.jumptron{
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #C8C8C8;
+}
+
+/* 定義BOX樣式 */
+.box{
+width:200px;
+height:200px;
+background-color:#EB7A77;
+margin:10px;
+float:left;
+}
+
+/* 定義Container樣式 */
+.container {position: fixed; top: 25%; left: 25%;}
+
+@-webkit-keyframes fadeIn {from {opacity: 0;}to {opacity: 1;}}
+@keyframes fadeIn {from {opacity: 0;}to {opacity: 1;}}
+
+.fade-in {
+  /* 定義透明度屬性*/
+	opacity:0; 
+  /* webkit為定義Chrome, Safari瀏覽器顯示的時間曲線*/
+	-webkit-animation:fadeIn ease-in 1s;
+  /* webkit為定義Mozilla firefax瀏覽器顯示的時間曲線*/
+  -moz-animation:fadeIn ease-in 1s;
+	
+  animation:fadeIn ease-in 1s;
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+  
+  -webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+
+.fade-in.one{
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.fade-in.two{
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.fade-in.three{
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+}
